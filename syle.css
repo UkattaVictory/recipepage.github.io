@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--oufit);
+}
+:root{
+    --white: hsl(0, 0%, 100%);
+    --background: hsl(30, 54%, 90%);
+    --stone: hsl(30, 10%, 34%);
+    --stones: hsl(24, 5%, 18%);
+    --prep: hsl(332, 51%, 32%);
+    --rose: hsl(330, 100%, 98%); 
+    --oufit: "Outfit", sans-serif;
+    --young-serif:"Young Serif", serif; 
+}
+body {
+    background-color: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.container {
+    background-color: var(--white);
+    width: 60%;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.first img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+}
+.first h1 {
+    margin: 30px 0;
+    font-size:40px;
+    font-family: var(--young-serif);
+    font-weight: 400;
+}
+.first p {
+    margin: 30px 0;
+    padding-right: 25px;
+    line-height: 1.5;;
+}
+.prep {
+    background-color: var(--rose);
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.prep h3 {
+    padding: 10px;
+    color: var(--prep);
+   
+}
+ul {
+    list-style-position: inside;
+    list-style: disc;
+    padding:  0 30px;
+}
+.prep li {
+    padding: 10px;
+}
+.prep li::marker {
+    color: var(--prep);
+}
+.ingredient{
+    margin: 30px 0;
+    
+   
+}
+.ingredient h2 {
+    color: #854632;
+    padding: 10px;
+    font-family: var(--young-serif);
+}
+.ingredient li {
+    padding: 10px;
+}
+.ingredient li::marker{
+    color: #854632;
+    font-weight: 400;
+}
+.instructions{
+    margin: 30px 0;
+   
+}
+.instructions h2 {
+    color: #854632;
+    padding: 10px;
+    font-family: var(--young-serif);
+}
+.instructions ol{
+    list-style-position: inside;
+    list-style: decimal;
+    padding: 0 25px;
+}
+.instructions li {
+    padding: 10px;    
+}
+.instructions li::marker{
+    color: #854632;
+    font-weight: bold;
+   
+}
+.nutrition{
+    margin: 30px 0;
+    max-width: 800px;
+}
+.nutrition h2 {
+    color: #854632;
+    padding: 10px;
+    font-family: var(--young-serif);
+}
+.nutrition p {
+    padding: 10px;
+}
+.nutrition table {
+    width: 95%;
+    border-collapse: collapse; 
+    margin: auto;  
+}
+.nutrition td{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 30px;   
+}
+.nutrition tr{
+    line-height: 3;
+}
+
+hr {
+    width: 90%;
+    height: 3px;
+    background-color: #e4dfdb;
+    border:none;
+}
+.data{
+    font-weight: bold;
+    color:#854632;
+}
+.footer{
+    padding: 0 10px;
+}
+.footer a{
+    text-decoration: none;
+   
+}
+
+@media (max-width: 700px){
+   body{
+    background-color: white;
+   }
+   .container{
+    width: 100%;
+    padding: 0px;
+    margin:0;
+    border-radius: 0px;
+   }
+   .first img{
+    border-radius: 0;
+   }
+   .first h1 {
+    padding:  0 25px;
+   }
+   .first p {
+    padding: 0 25px;
+   }
+   .prep{
+    margin:0 25px;
+   }
+   .ingredient{
+    margin: 0 25px;
+   }
+   .nutrition{
+    margin: 0 25px;
+   }
+   .instructions{
+    margin: 0 25px;
+   }
+   .footer{
+    margin: 10px 25px;
+   }
+   hr{
+    margin: 20px 30px;
+   }
+}
